@@ -16,23 +16,19 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
     gap: 30px;
     padding-right: 20%;
     padding-left: 20%;
     background-color: #E0E2E5; 
     border: 2px solid black;
-    /*cinza real*/
 }
 
 .main-section #second{   
     background-color: #D3D3D3; 
-    /*cinza claro*/
 }
 a{
     text-decoration: none;
-    color: grey;
+    color: rgb(46, 42, 166);
     cursor: pointer;
 }
 h1{
@@ -41,6 +37,12 @@ h1{
     padding-bottom: 10px;
     font-size: 70px;
 }
+nav{
+    display: flex;
+    gap: 50px;
+    font-size: 30px;
+}
+
 
 h1, h2, h3{
     text-align: center;
@@ -69,3 +71,25 @@ p{
     
     
 }
+
+/* parte do Js feito com Ia */
+/* LINK DO MENU ATIVO */
+.main-header a.active {
+    color: #0077ff;
+    font-weight: bold;
+    border-bottom: 2px solid #0077ff;
+}
+
+/* HEADER FIXO (opcional) */
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+}
+
